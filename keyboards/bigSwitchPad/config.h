@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x0000
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    %YOUR_NAME%
+#define MANUFACTURER    %Alessandro Galli%
 #define PRODUCT         bigSwitchPad
 #define DESCRIPTION     A custom keyboard
 
@@ -43,10 +43,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #define MATRIX_ROW_PINS { C6, D7, E6, B4, B5 }
 #define MATRIX_COL_PINS { B1, B3, B2, B6 }
-#define UNUSED_PINS { F4, F5, F6, F7, D1, D4, D3, D2}
+#define UNUSED_PINS { F4, F5, D1, D4, D3, D2}
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
+
+#define NUMBER_OF_ENCODERS 1
+#define ENCODERS_PAD_A { F6 }
+#define ENCODERS_PAD_B { F7 }
+#define ENCODER_RESOLUTION 4
 
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
